@@ -13,6 +13,12 @@
 		6C3AD5A9292A5D2000BE8E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3AD5A7292A5D2000BE8E21 /* Main.storyboard */; };
 		6C3AD5AB292A5D2200BE8E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3AD5AA292A5D2200BE8E21 /* Assets.xcassets */; };
 		6C3AD5AE292A5D2200BE8E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3AD5AC292A5D2200BE8E21 /* LaunchScreen.storyboard */; };
+		6C3AD5BD292A684900BE8E21 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AD5BC292A684900BE8E21 /* SearchResponse.swift */; };
+		6C3AD5BF292A6B4400BE8E21 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AD5BE292A6B4400BE8E21 /* Binder.swift */; };
+		6C3AD5C1292A6B6C00BE8E21 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AD5C0292A6B6C00BE8E21 /* ViewModel.swift */; };
+		6C3AD5C3292A6BF100BE8E21 /* SearchREsultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AD5C2292A6BF100BE8E21 /* SearchREsultViewModel.swift */; };
+		6C3AD5C6292A6D8400BE8E21 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AD5C5292A6D8400BE8E21 /* Extensions.swift */; };
+		6C3AD5C8292A6FF600BE8E21 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AD5C7292A6FF600BE8E21 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		6C3AD5AA292A5D2200BE8E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3AD5AD292A5D2200BE8E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C3AD5AF292A5D2200BE8E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3AD5BC292A684900BE8E21 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		6C3AD5BE292A6B4400BE8E21 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		6C3AD5C0292A6B6C00BE8E21 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6C3AD5C2292A6BF100BE8E21 /* SearchREsultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchREsultViewModel.swift; sourceTree = "<group>"; };
+		6C3AD5C5292A6D8400BE8E21 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6C3AD5C7292A6FF600BE8E21 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		6C3AD5A0292A5D2000BE8E21 /* CovidCombineMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				6C3AD5B7292A5D5F00BE8E21 /* View */,
+				6C3AD5B6292A5D4B00BE8E21 /* Model */,
+				6C3AD5B5292A5D4400BE8E21 /* ViewModel */,
 				6C3AD5A1292A5D2000BE8E21 /* AppDelegate.swift */,
 				6C3AD5A3292A5D2000BE8E21 /* SceneDelegate.swift */,
-				6C3AD5A5292A5D2000BE8E21 /* ViewController.swift */,
 				6C3AD5A7292A5D2000BE8E21 /* Main.storyboard */,
 				6C3AD5AA292A5D2200BE8E21 /* Assets.xcassets */,
 				6C3AD5AC292A5D2200BE8E21 /* LaunchScreen.storyboard */,
 				6C3AD5AF292A5D2200BE8E21 /* Info.plist */,
+				6C3AD5C4292A6D7900BE8E21 /* Resources */,
 			);
 			path = CovidCombineMVVM;
+			sourceTree = "<group>";
+		};
+		6C3AD5B5292A5D4400BE8E21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AD5C0292A6B6C00BE8E21 /* ViewModel.swift */,
+				6C3AD5C2292A6BF100BE8E21 /* SearchREsultViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C3AD5B6292A5D4B00BE8E21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AD5BC292A684900BE8E21 /* SearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C3AD5B7292A5D5F00BE8E21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AD5A5292A5D2000BE8E21 /* ViewController.swift */,
+				6C3AD5C7292A6FF600BE8E21 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C3AD5C4292A6D7900BE8E21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AD5BE292A6B4400BE8E21 /* Binder.swift */,
+				6C3AD5C5292A6D8400BE8E21 /* Extensions.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3AD5C8292A6FF600BE8E21 /* DetailViewController.swift in Sources */,
+				6C3AD5BD292A684900BE8E21 /* SearchResponse.swift in Sources */,
 				6C3AD5A6292A5D2000BE8E21 /* ViewController.swift in Sources */,
 				6C3AD5A2292A5D2000BE8E21 /* AppDelegate.swift in Sources */,
+				6C3AD5C6292A6D8400BE8E21 /* Extensions.swift in Sources */,
+				6C3AD5BF292A6B4400BE8E21 /* Binder.swift in Sources */,
+				6C3AD5C1292A6B6C00BE8E21 /* ViewModel.swift in Sources */,
+				6C3AD5C3292A6BF100BE8E21 /* SearchREsultViewModel.swift in Sources */,
 				6C3AD5A4292A5D2000BE8E21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +346,7 @@
 				DEVELOPMENT_TEAM = V5U53J8M62;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidCombineMVVM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReactiveMVVM;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +375,7 @@
 				DEVELOPMENT_TEAM = V5U53J8M62;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidCombineMVVM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReactiveMVVM;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
